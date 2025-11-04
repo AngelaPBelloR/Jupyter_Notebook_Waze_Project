@@ -1384,6 +1384,8 @@ df['km_per_driving_day'].describe()
 
 
 
+The standar deviation is NaN, and the max value is infinity. This is the result of there being values of zero in the driving_days column. To solve we can convert these values to zero (np.inf to refer to a value of infinity) 
+
 
 ```python
 # 1. Convert infinite values to zero
@@ -1427,7 +1429,7 @@ plt.title('Churn rate by mean km per driving day');
 
 
     
-![png](output_65_0.png)
+![png](output_66_0.png)
     
 
 
@@ -1450,7 +1452,7 @@ plt.title('Churn rate per driving day');
 
 
     
-![png](output_67_0.png)
+![png](output_68_0.png)
     
 
 
@@ -1486,7 +1488,7 @@ histogrammer('percent_sessions_in_last_month',
 
 
     
-![png](output_71_1.png)
+![png](output_72_1.png)
     
 
 
@@ -1513,7 +1515,7 @@ plt.title('Num. days after onboarding for users with >=40% sessions in last mont
 
 
     
-![png](output_73_0.png)
+![png](output_74_0.png)
     
 
 
